@@ -1,0 +1,38 @@
+#api: 0.0.0.0:5279
+#streaming_server: 0.0.0.0:5280
+
+components_to_skip:
+- hash_announcer
+- blob_server
+track_bandwidth: false
+
+save_blobs: false
+save_files: false
+share_usage_data: false
+use_upnp: false
+save_resolved_claims: false
+
+reflect_streams: false
+streaming_get: false
+
+tracker_servers:
+- tracker.lbry.grin.io:9252
+- tracker.lbry.pigg.es:9252
+- tracker.madiator.com:9252
+lbryum_servers:
+- spv11.lbry.com:50001
+- spv12.lbry.com:50001
+- spv13.lbry.com:50001
+- spv14.lbry.com:50001
+- spv15.lbry.com:50001
+- spv16.lbry.com:50001
+- spv17.lbry.com:50001
+- spv18.lbry.com:50001
+- spv19.lbry.com:50001
+- hub.lbry.grin.io:50001
+- hub.lizard.technology:50001
+- s1.lbry.network:50001
+- a-hub1.odysee.com:50001
+- b-hub1.odysee.com:50001
+- c-hub1.odysee.com:50001
+- s-hub1.odysee.com:50001

@@ -1,0 +1,20 @@
+{
+  "name": "lbry-api",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun index.js",
+    "start:docker": "docker-compose up",
+    "start:lbrynet": "lbrynet start --config=./daemon/daemon_settings.yml",
+    "build": "bun build index.js --compile --outfile api",
+    "build:docker": "docker build . -t pigges/lbry-api",
+    "build:docker:lbrynet": "sh ./build/lbrynet/build.sh 0.113.0",
+    "dev": "bun --watch index.js"
+  },
+  "dependencies": {
+    "hono": "^3.3.4"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
